@@ -13,4 +13,4 @@
 module load OpenMPI/4.1.1-GCC-10.3.0       
 
 # Run the job
-srun singularity exec ~/fenics/dolfinx.sif python3 diffusion.py
+srun --mpi=pmix singularity exec ~/fenics/dolfinx.sif python3 diffusion.py
