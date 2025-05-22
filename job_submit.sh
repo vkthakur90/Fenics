@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --partition=cpu
+#SBATCH --partition=cpufast
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
 #SBATCH --cpus-per-task=1
