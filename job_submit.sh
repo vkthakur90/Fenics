@@ -7,9 +7,7 @@
 #SBATCH --time=01:00:00
 #SBATCH --job-name=dolfinx_job
 #SBATCH --output=dolfinx_%j.out
-#SBATCH --error=dolfinx_%j.err
-        
-module load OpenMPI/4.1.1-GCC-10.3.0       
+#SBATCH --error=dolfinx_%j.err      
 
 # Run the job
 srun singularity exec ~/fenics/dolfinx.sif python3 diffusion.py
